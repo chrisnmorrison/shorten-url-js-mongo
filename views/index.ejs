@@ -25,7 +25,7 @@
 
     <form action='/' method='post' class="form">
         <input type="url" name="url" id="url" class="form__field" placeholder="Enter URL to shorten" required/>
-        <button type="submit" class="btn btn--primary btn--inside">Shorten!</button>
+        <button type="submit" class="btn btn--primary btn--inside" onclick="showButton()">Shorten!</button>
     </form>
 </div>
 
@@ -33,18 +33,20 @@
 
             <div class="short-url">
                 <% if (locals.short_url) { %>
-                    <a href='<%= short_url %>'>
+                    <a id ='short-url' href='<%= short_url %>'>
                         <%= short_url %>
                     </a>
                     <% } %>
             </div>
 
-            <button class='btn btn--primary copy-link' onclick="copyToClipboard('.short-url')">Copy Link</button>
+            <!-- TODO: Make button only appear when there is a short link -->
+            <button class='btn btn--primary' onclick="copyToClipboard('.short-url')">Copy Link</button>
 
             <footer class="container__item container__item--bottom">
-                <p>Created by <a href="https://chrismorrison.ca" target="_blank">Chris Morrison</a> of <a href="https://mesmerdesign.ca" 
-                    target="_blank">Mesmer Design</a></p>
+                <p>Created by <a href="https://chrismorrison.ca" target="_blank">Chris Morrison</a></p>
                 </footer>
+
+
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 
 body {
   font-size: 10px;
-  background-color: #ff7b73;
+  background-color: #ff6565;
   margin: 0;
   display: -ms-grid;
   display: grid;
@@ -25,7 +25,8 @@ a {
 }
 
 a:hover {
-  color: #75d4b4;
+  color: #d9e5ee;
+  text-shadow: 2px 2px 8px #ffffff;
 }
 
 .title {
@@ -117,7 +118,9 @@ p.error {
   color: #f44336;
 }
 
-.copy-link {
+.copy-link-hide {
+  display: none;
+  height: 100px;
 }
 
 footer {
