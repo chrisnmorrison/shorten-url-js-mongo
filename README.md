@@ -42,10 +42,10 @@ npm start
 
 - [**Chris Morrison**](https://chrismorrison.ca)
 
-## Contribute
+<!-- ## Contribute
 
 You can fork this repo and send me a PR.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. -->
