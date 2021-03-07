@@ -24,7 +24,19 @@ npm install
 
 Step 3: Install & Run MongoDB
 
-If you aren't entirely familiar with MongoDB, i'd recommend using [Compass](https://www.mongodb.com/products/compass) as a desktop GUI. See Mongo Docs to learn how to set up a local environment.
+If you aren't entirely familiar with MongoDB, i'd recommend using [Compass](https://www.mongodb.com/products/compass) as a desktop GUI until you learn Mongo on the CLI. See Mongo Docs to learn how to set up a local environment.
+
+Step 4: If you are using Compass
+
+Under the New Connections tab, click on:
+
+```
+Fill in connection fields individually
+```
+
+Then, enter the following details
+
+![MongoDB localhost settings](static/images/mongo-settings.png "MongoDB Compass settings")
 
 Step 4: Install Nodemon (optional but recommended)
 
@@ -41,6 +53,17 @@ npm start
 ## Author
 
 - [**Chris Morrison**](https://chrismorrison.ca)
+
+## To-do List
+
+- [X] Make more coffee ☕
+- [ ] Make Front-End look a bit cleaner
+- [ ] Remove formatting styles in body tag to allow other content to be added to page (i.e. rework 100vh to something more flexible)
+- [ ] Make Mobile-friendly
+- [ ] Make copy button appear only when link is present 
+- [ ] Add (at the very least) an About page
+- [ ] Deploy to a web server
+
 
 <!-- ## Contribute
 
