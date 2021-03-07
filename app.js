@@ -51,6 +51,7 @@ app.post('/', async (req, res, next) => {
     } catch (error) {
         next(error)
     }
+    
 })
 
 app.get('/:shortId', async (req,res,next) => {
@@ -92,8 +93,6 @@ function copyToClipboard(element) {
   }
   
   function showButton() {
-    let isEmpty = document.getElementById('short-url').innerHTML === "";
-    if (isEmpty) {
-        isEmpty.classList.remove("copy-link-hide");
+    document.getElementsByClassName('copy-link').classList.remove("copy-link-hide");
     }
- }
+ 

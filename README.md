@@ -1,5 +1,8 @@
 # URL Shortener using NodeJS & MongoDB, and a lightweight HTML/CSS front-end
 
+![Url Shortener](static/images/homepage.png "Url Shortener")
+
+
 This application shortens the url entered by the user. It stores the URL in the database, and when identical URLS are entered, it returns the same URL to avoid duplicates.
 
 MongoDB is a non-relational database that is very fast, and easy to use.
