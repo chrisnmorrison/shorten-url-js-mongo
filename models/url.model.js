@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const CryptoUrlSchema = new Schema({
+const EncryptUrlSchema = new Schema({
     url: {
         type: String,
         required: true
@@ -12,6 +12,6 @@ const CryptoUrlSchema = new Schema({
     }
 });
 
-const ShortUrl = mongoose.model('cryptoid', CryptoUrlSchema)
+const ShortUrl = mongoose.model('crypto-id', EncryptUrlSchema)
 
 module.exports = ShortUrl

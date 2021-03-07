@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017', {
     useUnifiedTopology: true,
     useCreateIndex: true
 }).then(() => console.log('mongoose connected'))
-.catch(error => console.log('error connecting to mongodb'))
+.catch(error => console.log('error connecting to MongoDB'))
 
 app.set('view engine', 'ejs')
 
@@ -26,7 +26,8 @@ app.get('/', async (req, res, next) => {
 
 app.post('/', async (req, res, next) => {
     try {
-        const {url} = req.body
+
+        const url = req.body.url;
         if (!url) {
             throw createHttpError.BadRequest('Provide a valid url')
         }
@@ -73,8 +74,8 @@ app.use((req, res, next) => {
 })
 
 app.use((err, req, res, next) => {
-    res.status(err.status || 500)
-    res.render('index', {error: err.message})
+    res.status(err.status || 500);
+    res.render('index', {error: err.message});
 })
 
 app.listen(3000, () => console.log('Server is on port 3000'));
